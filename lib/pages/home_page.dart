@@ -89,10 +89,30 @@ class _HomeState extends State<Home> {
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(color: Color.fromRGBO(244, 149, 33, 1))
-                      )
-                      
+                      ),
                     ),
-                  )
+                  ),
+                  SizedBox(height: 20,),
+                  TextField(
+                    keyboardType: TextInputType.number,
+                    decoration: InputDecoration(
+                      prefixIcon: Icon(
+                        Icons.shopping_cart_checkout_sharp,
+                        color: Colors.brown,
+                      ),
+                      label: Text('Jumlah Barang'),
+                      hintText: '5',
+                      hintStyle: TextStyle(
+                        color: Colors.grey,
+                      ),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(5),
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Color.fromRGBO(244, 149, 33, 1))
+                      ),
+                    ),
+                  ),
                 ],
             ),
           ),
