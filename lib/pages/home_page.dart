@@ -166,10 +166,34 @@ class _HomeState extends State<Home> {
                         ),
                       ),
                     ),
+                  ),
+                  SizedBox(height: 20,),
+                  SizedBox(
+                    height: 50,
+                    width: double.infinity,
+                    child: OutlinedButton.icon(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.print,
+                        color: Colors.white,
+                      ),
+                      label: Text(
+                        "Cetak Struk",
+                        style: TextStyle(color: Colors.white),
+                      ),
+                      style: OutlinedButton.styleFrom(
+                        backgroundColor: Color.fromRGBO(244, 149, 33, 1),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        side: BorderSide(color: Colors.white),
+                        padding: EdgeInsets.symmetric(horizontal: 12), // jangan vertical
+                      ),
+                    ),
                   )
                 ],
+              )
             ),
-          ),
         ),
       ),
     );
