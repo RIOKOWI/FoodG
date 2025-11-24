@@ -134,6 +134,39 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                   ),
+                  SizedBox(height: 20,),
+                  Card(
+                    elevation: 10,
+                    color: Colors.blue[100],
+                    child: Container(
+                      height: 50,
+                      width: double.infinity,
+                      child: Padding(
+                        padding: EdgeInsets.only(right: 10, left: 10),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'TOTAL :',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black,
+                                fontSize: 20
+                              ),
+                            ),
+                            Text(
+                              'Rp 0',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Color.fromRGBO(244, 149, 33, 1),
+                                fontSize: 20
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  )
                 ],
             ),
           ),
