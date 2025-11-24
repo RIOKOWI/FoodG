@@ -86,6 +86,9 @@ class _HomeState extends State<Home> {
                       ),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(5),
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Color.fromRGBO(244, 149, 33, 1))
                       )
                       
                     ),
