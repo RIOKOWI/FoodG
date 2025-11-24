@@ -196,6 +196,12 @@ class _HomeState extends State<Home> {
             ),
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        tooltip: 'Bluetooth',
+        onPressed: () {},
+        child: Icon(Icons.bluetooth),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat
     );
   }
 }
