@@ -67,11 +67,26 @@ class _HomeState extends State<Home> {
               ]
             ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(10.0),
-        child: Column(
-            children: [
-              
-            ],
+        child: Center(
+          child: Container(
+            margin: EdgeInsets.all(20),
+            child: Column(
+                children: [
+                  TextField(
+                    autofocus: true,
+                    decoration: InputDecoration(
+                      prefixIcon: Icon(
+                        Icons.coffee_outlined,
+                        color: Colors.brown,
+                      ),
+                      hint: Text('Contoh : Americano'),
+                      label: Text('Nama Menu')
+                      
+                    ),
+                  )
+                ],
+            ),
+          ),
         ),
       ),
     );
