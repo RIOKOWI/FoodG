@@ -34,12 +34,22 @@ class _HomeState extends State<Home> {
                   ]
                 )
               ),
-              actions: const [],
+              actions: [
+                IconButton(
+                onPressed: (){}, 
+                icon: Icon(
+                  Icons.bluetooth,
+                  color: Color.fromRGBO(26, 88, 169, 1),
+                  ),                  
+                )
+              ],
             ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(10.0),
         child: Column(
-            children: [],
+            children: [
+              
+            ],
         ),
       ),
     );
