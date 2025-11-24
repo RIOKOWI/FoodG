@@ -13,7 +13,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
               title: Container(
-                padding: EdgeInsets.all(10),
+                padding: EdgeInsets.all(5),
                 child: RichText(
                   text: TextSpan(
                     children: [
@@ -39,23 +39,29 @@ class _HomeState extends State<Home> {
               ),
               actions: [
                 Container(
-                  margin: EdgeInsets.only(right: 10),
-                  padding: EdgeInsets.all(6), 
+                  margin: EdgeInsets.only(right: 10, top: 5),
+                  padding: EdgeInsets.only(right: 15, left: 15, top: 5, bottom: 5), 
                   decoration: BoxDecoration(
                     border: Border.all(
+                      color: Colors.grey
                     ),
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(5),
                   ),
-                  child: IconButton(
-                    tooltip: 'Bluetooth',
-                    onPressed: () {},
-                    icon: Icon(
-                      Icons.bluetooth,
-                      color: Color.fromRGBO(26, 88, 169, 1),
-                    ),
-                    iconSize: 20,                 
-                    padding: EdgeInsets.zero,     
-                    constraints: BoxConstraints(), 
+                  child: Row(
+                    children: [
+                      IconButton(
+                        tooltip: 'Bluetooth',
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.bluetooth,
+                          color: Color.fromRGBO(26, 88, 169, 1),
+                        ),
+                        iconSize: 20,                 
+                        padding: EdgeInsets.zero,     
+                        constraints: BoxConstraints(), 
+                      ),
+                      Text('PT200')
+                    ],
                   ),
                 ),
               ]
