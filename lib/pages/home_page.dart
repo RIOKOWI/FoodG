@@ -13,6 +13,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
               title: Container(
+                margin: EdgeInsets.only(top: 5),
                 padding: EdgeInsets.all(5),
                 child: RichText(
                   text: TextSpan(
