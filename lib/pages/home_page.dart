@@ -113,6 +113,27 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                   ),
+                  SizedBox(height: 20,),
+                  TextField(
+                    keyboardType: TextInputType.number,
+                    decoration: InputDecoration(
+                      prefixIcon: Icon(
+                        Icons.monetization_on_outlined,
+                        color: Colors.brown,
+                      ),
+                      label: Text('Harga Satuan'),
+                      hintText: '15000',
+                      hintStyle: TextStyle(
+                        color: Colors.grey,
+                      ),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(5),
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Color.fromRGBO(244, 149, 33, 1))
+                      ),
+                    ),
+                  ),
                 ],
             ),
           ),
