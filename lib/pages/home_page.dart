@@ -79,8 +79,14 @@ class _HomeState extends State<Home> {
                         Icons.coffee_outlined,
                         color: Colors.brown,
                       ),
-                      hint: Text('Contoh : Americano'),
-                      label: Text('Nama Menu')
+                      label: Text('Nama Menu'),
+                      hintText: 'Americano',
+                      hintStyle: TextStyle(
+                        color: Colors.grey,
+                      ),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(5),
+                      )
                       
                     ),
                   )
