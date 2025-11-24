@@ -11,16 +11,17 @@ class Home extends StatelessWidget {
                 text: TextSpan(
                   children: [
                     TextSpan(
-                      text: 'POS ',
-                      style: TextStyle(
-                        fontWeight: FontWeight.w500,
-                        fontSize: 25
-                      )
-                    ),
-                    TextSpan(
                       text: 'Food.',
                       style: TextStyle(
                         color: Color.fromRGBO(26, 88, 169, 1),
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25
+                      ),
+                    ),
+                    TextSpan(
+                      text: 'G',
+                      style: TextStyle(
+                        color: Color.fromRGBO(244, 149, 33, 1),
                         fontWeight: FontWeight.bold,
                         fontSize: 25
                       ),
